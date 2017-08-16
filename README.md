@@ -1,12 +1,10 @@
 # 🤖 Creating your own Facebook Messenger bot
 
-![Alt text](/demo/Demo.gif)
-
 Facebook recently opened up their Messenger platform to enable bots to converse with users through Facebook Apps and on Facebook Pages. 
 
-You can read the  [documentation](https://developers.facebook.com/docs/messenger-platform/quickstart) the Messenger team prepared but it's not very clear for beginners and intermediate hackers. 
+You can read the  [documentation](https://developers.facebook.com/docs/messenger-platform/quickstart) the Messenger team prepared. This is a great addition to that documentation to follow along. 
 
-So instead here is how to create your own messenger bot in 15 minutes.
+So instead here is how to create your own messenger bot in 30 minutes.
 
 ## 🙌 Get set
 
@@ -97,17 +95,23 @@ You can also skip the whole thing by git cloning this repository, running npm in
 
 2. In the app go to Messenger tab then click Setup Webhook. Here you will put in the URL of your Heroku server and a token. Make sure to check all the subscription fields. 
 
-    ![Alt text](/demo/shot3.jpg)
+    ![Alt text](https://github.com/nivedita2015/messenger-bot-tutorial/blob/master/messenger.png)
+    
+    ![Alt text](https://github.com/nivedita2015/messenger-bot-tutorial/blob/master/msngr-setup.png)
+
 
 3. Get a Page Access Token and save this somewhere. 
 
-    ![Alt text](/demo/shot2.jpg)
+    https://github.com/nivedita2015/messenger-bot-tutorial/blob/master/create-token.png
 
 4. Go back to Terminal and type in this command to trigger the Facebook app to send messages. Remember to use the token you requested earlier.
 
     ```bash
     curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=<PAGE_ACCESS_TOKEN>"
     ```
+
+    ![Alt text](https://github.com/nivedita2015/messenger-bot-tutorial/blob/master/curl-fb.png)
+
 
 ### *Setup the bot*
 
@@ -192,9 +196,10 @@ Now that Facebook and Heroku can talk to each other we can code out the bot.
     
 5. Go to the Facebook Page and click on Message to start chatting!
 
-![Alt text](/demo/shot4.jpg)
-
 ## ⚙ Customize what the bot says
+
+
+https://developers.facebook.com/docs/messenger-platform/send-api-reference
 
 ### *Send a Structured Message*
 
@@ -305,10 +310,6 @@ What happens when the user clicks on a message button or card though? Let's upda
 ```
 
 Git add, commit, and push to Heroku again.
-
-Now when you chat with the bot and type 'Generic' you can see this.
-
-   ![Alt text](/demo/shot6.jpg)
 
 ## 📡 How to share your bot
 
