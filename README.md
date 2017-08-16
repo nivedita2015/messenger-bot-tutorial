@@ -93,7 +93,7 @@ You can also skip the whole thing by git cloning this repository, running npm in
 
 1. Create or configure a Facebook App or Page here https://developers.facebook.com/apps/
 
-    ![Alt text](/demo/shot1.jpg)
+    ![Alt text](create=app.png)
 
 2. In the app go to Messenger tab then click Setup Webhook. Here you will put in the URL of your Heroku server and a token. Make sure to check all the subscription fields. 
 
