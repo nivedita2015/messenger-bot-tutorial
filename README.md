@@ -102,7 +102,7 @@ You can also skip the whole thing by git cloning this repository, running npm in
 
 3. Get a Page Access Token and save this somewhere. 
 
-    https://github.com/nivedita2015/messenger-bot-tutorial/blob/master/create-token.png
+    ![Alt text](https://github.com/nivedita2015/messenger-bot-tutorial/blob/master/create-token.png)
 
 4. Go back to Terminal and type in this command to trigger the Facebook app to send messages. Remember to use the token you requested earlier.
 
@@ -204,8 +204,6 @@ https://developers.facebook.com/docs/messenger-platform/send-api-reference
 ### *Send a Structured Message*
 
 Facebook Messenger can send messages structured as cards or buttons. 
-
-![Alt text](/demo/shot5.jpg)
 
 1. Copy the code below to index.js to send a test message back as two cards.
 
